@@ -3,24 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JD Ops → WZDx Feed</title>
+    <title>Field Escort — Work Zone Feed (Beta)</title>
     <style>
-      body { font: 16px/1.5 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; }
-      code { background: #f2f2f2; padding: 0.1rem 0.3rem; border-radius: 4px; }
-      a.feed { font-size: 1.1rem; }
+      body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; color: #1a1a1a; }
+      code { background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 5px; word-break: break-all; }
+      a { color: #367c2b; } a.feed { font-size: 1.1rem; font-weight: 600; }
+      .badge { display:inline-block; background:#fff3cd; color:#7a5b00; border:1px solid #e6c200;
+        border-radius:999px; padding:.05rem .55rem; font-size:.7rem; font-weight:700; vertical-align:middle; }
+      .muted { color:#666; font-size:.93rem; }
     </style>
   </head>
   <body>
-    <h1>WZDx Work Zone Feed</h1>
-    <p>Mobile work zones projected from John Deere Operations Center equipment,
-       snapped to the Iowa DOT RAMS Road Network. WZDx specification v4.2.</p>
+    <p><img src="./logo.png" alt="Field Escort logo" width="88" height="88" style="border-radius:18px" /></p>
+    <h1>Field Escort — Work Zone Feed <span class="badge">BETA</span></h1>
+    <p>Free, public road-safety feeds generated from John Deere Operations Center
+       equipment locations — warning drivers about slow-moving farm and maintenance
+       equipment on public roads. Geometry is corrected to road centerlines downstream.</p>
     <p>
       <a class="feed" href="./feed.json">→ feed.json</a> &nbsp;(WZDx v4.2, GeoJSON — for DOT / 511)<br />
       <a class="feed" href="./cifs.xml">→ cifs.xml</a> &nbsp;(Waze CIFS, XML — for Waze for Cities)
     </p>
-    <p>Both regenerated every 15 minutes by GitHub Actions from the same projected
-       data. Validate WZDx with the
-       <a href="https://usdot-jpo-ode.github.io/wzdx/">official WZDx validator</a>;
-       CIFS against your Waze for Cities onboarding.</p>
+    <p class="muted">⚠️ <b>Beta:</b> feeds are live and valid, but work-zone coverage is
+       limited while the program onboards organizations. Treat positions as best-effort.</p>
+    <p class="muted">Regenerated every 30 minutes. Open data (CC0). Validate WZDx with the
+       <a href="https://usdot-jpo-ode.github.io/wzdx/">official WZDx validator</a>.
+       Connect your equipment at
+       <a href="https://field-escort-connect.mattmilleriowa.workers.dev/field-escort">Field Escort</a>.</p>
   </body>
 </html>
