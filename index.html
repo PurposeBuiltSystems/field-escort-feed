@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JD Ops → WZDx Feed</title>
+    <style>
+      body { font: 16px/1.5 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; }
+      code { background: #f2f2f2; padding: 0.1rem 0.3rem; border-radius: 4px; }
+      a.feed { font-size: 1.1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>WZDx Work Zone Feed</h1>
+    <p>Mobile work zones projected from John Deere Operations Center equipment,
+       snapped to the Iowa DOT RAMS Road Network. WZDx specification v4.2.</p>
+    <p>
+      <a class="feed" href="./feed.json">→ feed.json</a> &nbsp;(WZDx v4.2, GeoJSON — for DOT / 511)<br />
+      <a class="feed" href="./cifs.xml">→ cifs.xml</a> &nbsp;(Waze CIFS, XML — for Waze for Cities)
+    </p>
+    <p>Both regenerated every 15 minutes by GitHub Actions from the same projected
+       data. Validate WZDx with the
+       <a href="https://usdot-jpo-ode.github.io/wzdx/">official WZDx validator</a>;
+       CIFS against your Waze for Cities onboarding.</p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "feed_info": {
+    "publisher": "Field Escort",
+    "version": "4.2",
+    "update_date": "2026-06-23T06:02:54.197Z",
+    "update_frequency": 900,
+    "contact_name": "Field Escort Support",
+    "contact_email": "support@fieldescort.app",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "data_sources": [
+      {
+        "data_source_id": "jdops-projected",
+        "organization_name": "Field Escort",
+        "contact_name": "Field Escort Support",
+        "contact_email": "support@fieldescort.app",
+        "update_frequency": 900,
+        "update_date": "2026-06-23T06:02:54.197Z"
+      }
+    ]
+  },
+  "type": "FeatureCollection",
+  "features": []
+}
